@@ -1,54 +1,60 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Webpage Design</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Learn web design and development with a vintage-inspired approach to modern websites.">
+  <title>Vintage Web Design & Development Course</title>
 </head>
 <body>
-    <div class="main">
-        <div class="navbar">
-            <div class="icon">
-                <div class="logo-wrapper">
-                    <h2 class="logo">Vintage</h2>
-                </div>
-            </div>
-            <ul class="menu">
-                <li><a href="#">HOME</a></li>
-                <li><a href="#">ABOUT</a></li>
-                <li><a href="#">SERVICE</a></li>
-                <li><a href="#">DESIGN</a></li>
-                <li><a href="#">CONTACT</a></li>
-            </ul>
-            <div class="search">
-                <input class="srch" type="search" placeholder="type to text">
-                <a href="#"><button class="btn">search</button></a>
-            </div>
-        </div>
-        <br>
-        <div class="content">
-            <h1>web design & <br><span>development</span><br>course</h1>
-            <p class="par"> vintage can serve as a creative theme or aesthetic, inspiring the design of <br> websites with timeless, retro elements like classic typography,<br> muted color palettes, and nostalgic imagery. It teaches students how to blend <br> old-world charm with modern functionality, creating unique, visually appealing <br>sites that evoke emotion and connect with users. Incorporating vintage design <br> principles also  emphasizes storytelling, cultural relevance, and the <br> balance of form and function, offering valuable lessons <br> in crafting distinctive user experiences.</p>
-            <button class="cn"><a href="#">Join us.</a></button>
+  <header>
+    <h1>Vintage</h1>
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Design</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+    <form role="search">
+      <label for="search">Search:</label>
+      <input id="search" type="search" placeholder="Type to text">
+      <button type="submit">Search</button>
+    </form>
+  </header>
 
-            <div class="form">
-                <h2>Login Here</h2>
-                <input type="email" name="email" placeholder="Enter Email Here">
-                <input type="password" name="" placeholder="Enter password Here">
-                <button class="btnn"><a href="#">Login</a></button>
+  <main>
+    <article>
+      <h2>Web Design & Development Course</h2>
+      <p>Vintage can serve as a creative theme ...</p>
+      <a href="#">Join us</a>
+    </article>
 
-                <p class="link">Don't have an account<br>
-                <a href="#">Sign up</a> here</p>
-                <p class="liw">Log up with</p>
+    <section aria-labelledby="login-title">
+      <h2 id="login-title">Login Here</h2>
+      <form>
+        <label for="email">Email:</label>
+        <input id="email" type="email" name="email" placeholder="Enter Email Here">
 
-                <div class="icons">
-                    <a href="#"><ion-icon name="logo-facebook"></ion-icon></a>
-                    <a href="#"><ion-icon name="logo-instagram"></ion-icon></a>
-                    <a href="#"><ion-icon name="logo-google"></ion-icon></a>
-                    <a href="#"><ion-icon name="logo-skype"></ion-icon></a>
-                </div>
-            </div>
-        </div>
-    </div>
-    <script src="https://unpkg.com/ionicons@5.5.2/dist/ionicons.js"></script>
+        <label for="password">Password:</label>
+        <input id="password" type="password" name="password" placeholder="Enter Password Here">
+
+        <button type="submit">Login</button>
+        <p>Don’t have an account? <a href="#">Sign up here</a></p>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>Connect with us:</p>
+    <ul>
+      <li><a href="#">Facebook</a></li>
+      <li><a href="#">Instagram</a></li>
+      <li><a href="#">Google</a></li>
+      <li><a href="#">Skype</a></li>
+    </ul>
+  </footer>
 </body>
 </html>
