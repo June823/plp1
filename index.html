@@ -3,58 +3,173 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Learn web design and development with a vintage-inspired approach to modern websites.">
-  <title>Vintage Web Design & Development Course</title>
+  <meta name="description" content="Enhanced HTML5 demo page with lists, tables, media, and a complete validated form.">
+  <title>Enhanced HTML5 Page with Forms</title>
 </head>
 <body>
+
+  <!-- Header -->
   <header>
-    <h1>Vintage</h1>
-    <nav>
-      <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Services</a></li>
-        <li><a href="#">Design</a></li>
-        <li><a href="#">Contact</a></li>
-      </ul>
-    </nav>
-    <form role="search">
-      <label for="search">Search:</label>
-      <input id="search" type="search" placeholder="Type to text">
-      <button type="submit">Search</button>
-    </form>
+    <h1>Enhanced HTML5 Demo Page</h1>
+    <p>This page demonstrates lists, tables, media, and a complete HTML5 form with validation.</p>
   </header>
 
-  <main>
-    <article>
-      <h2>Web Design & Development Course</h2>
-      <p>Vintage can serve as a creative theme ...</p>
-      <a href="#">Join us</a>
-    </article>
-
-    <section aria-labelledby="login-title">
-      <h2 id="login-title">Login Here</h2>
-      <form>
-        <label for="email">Email:</label>
-        <input id="email" type="email" name="email" placeholder="Enter Email Here">
-
-        <label for="password">Password:</label>
-        <input id="password" type="password" name="password" placeholder="Enter Password Here">
-
-        <button type="submit">Login</button>
-        <p>Don’t have an account? <a href="#">Sign up here</a></p>
-      </form>
-    </section>
-  </main>
-
-  <footer>
-    <p>Connect with us:</p>
+  <!-- Section 1: Lists -->
+  <section>
+    <h2>Popular Web Development Languages</h2>
     <ul>
-      <li><a href="#">Facebook</a></li>
-      <li><a href="#">Instagram</a></li>
-      <li><a href="#">Google</a></li>
-      <li><a href="#">Skype</a></li>
+      <li>HTML5</li>
+      <li>CSS3</li>
+      <li>JavaScript</li>
+      <li>Python</li>
+      <li>PHP</li>
     </ul>
+
+    <h3>Steps to Create a Web Page</h3>
+    <ol>
+      <li>Write HTML structure</li>
+      <li>Add CSS styling</li>
+      <li>Enhance with JavaScript</li>
+      <li>Test for accessibility</li>
+      <li>Deploy online</li>
+    </ol>
+  </section>
+
+  <!-- Section 2: Table -->
+  <section>
+    <h2>Course Schedule</h2>
+    <table border="1" cellpadding="5" cellspacing="0">
+      <caption>Weekly Web Development Schedule</caption>
+      <thead>
+        <tr>
+          <th>Day</th>
+          <th>Topic</th>
+          <th>Duration</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Monday</td>
+          <td>HTML5 Basics</td>
+          <td>2 hours</td>
+        </tr>
+        <tr>
+          <td>Tuesday</td>
+          <td>CSS Styling</td>
+          <td>2 hours</td>
+        </tr>
+        <tr>
+          <td>Wednesday</td>
+          <td>JavaScript Essentials</td>
+          <td>3 hours</td>
+        </tr>
+        <tr>
+          <td>Thursday</td>
+          <td>Responsive Design</td>
+          <td>2 hours</td>
+        </tr>
+        <tr>
+          <td>Friday</td>
+          <td>Final Project</td>
+          <td>3 hours</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <!-- Section 3: Media -->
+  <section>
+    <h2>Media Showcase</h2>
+    <figure>
+      <img src="https://via.placeholder.com/400x200" alt="Sample image showing placeholder content">
+      <figcaption>Sample placeholder image</figcaption>
+    </figure>
+
+    <figure>
+      <audio controls>
+        <source src="sample.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+      </audio>
+      <figcaption>Sample audio playback</figcaption>
+    </figure>
+
+    <figure>
+      <video width="320" height="240" controls>
+        <source src="sample.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+      <figcaption>Sample video playback</figcaption>
+    </figure>
+  </section>
+
+  <!-- Section 4: Form -->
+  <section>
+    <h2>User Registration Form</h2>
+    <form action="#" method="post">
+      <fieldset>
+        <legend>Personal Information</legend>
+
+        <label for="fullname">Full Name:</label><br>
+        <input type="text" id="fullname" name="fullname" placeholder="John Doe" required minlength="3"><br><br>
+
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" placeholder="example@mail.com" required><br><br>
+
+        <label for="password">Password:</label><br>
+        <input type="password" id="password" name="password" required minlength="6"><br><br>
+
+        <label for="age">Age:</label><br>
+        <input type="number" id="age" name="age" min="18" max="100" required><br><br>
+
+        <label for="dob">Date of Birth:</label><br>
+        <input type="date" id="dob" name="dob" required><br><br>
+      </fieldset>
+
+      <fieldset>
+        <legend>Preferences</legend>
+
+        <label for="gender">Gender:</label><br>
+        <select id="gender" name="gender" required>
+          <option value="">--Select--</option>
+          <option value="male">Male</option>
+          <option value="female">Female</option>
+          <option value="other">Other</option>
+        </select><br><br>
+
+        <p>Choose your favorite language:</p>
+        <input type="radio" id="html" name="language" value="HTML" required>
+        <label for="html">HTML</label><br>
+
+        <input type="radio" id="css" name="language" value="CSS">
+        <label for="css">CSS</label><br>
+
+        <input type="radio" id="js" name="language" value="JavaScript">
+        <label for="js">JavaScript</label><br><br>
+
+        <p>Subscribe to newsletters:</p>
+        <input type="checkbox" id="news" name="news" checked>
+        <label for="news">Yes, sign me up!</label><br><br>
+      </fieldset>
+
+      <fieldset>
+        <legend>Additional Info</legend>
+        <label for="bio">Short Bio:</label><br>
+        <textarea id="bio" name="bio" rows="4" cols="40" placeholder="Tell us something about yourself..."></textarea><br><br>
+
+        <label for="website">Personal Website (optional):</label><br>
+        <input type="url" id="website" name="website" placeholder="https://example.com"><br><br>
+      </fieldset>
+
+      <button type="submit">Submit</button>
+      <button type="reset">Reset</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 HTML5 Demo Page. All rights reserved.</p>
   </footer>
+
 </body>
 </html>
+
